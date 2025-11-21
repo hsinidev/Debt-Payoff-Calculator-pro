@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Debt Payoff Calculator | Resolve Your Debt Faster</title>
+    
+    <!-- SEO Metadata -->
+    <meta name="description" content="Calculate your debt payoff date with our advanced Snowball vs Avalanche calculator. Visualize your path to financial freedom with interactive charts, amortization schedules, and expert financial guides. Free tool by Doodax." />
+    <meta name="keywords" content="debt payoff calculator, snowball method, avalanche method, financial freedom, debt free, credit card payoff, loan calculator, amortization schedule, debt consolidation" />
+    <meta name="author" content="Hsini Mohamed" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://payoffcalculator.doodax.com/" />
+    <link rel="icon" type="image/svg+xml" href="public/favicon.svg" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://payoffcalculator.doodax.com/" />
+    <meta property="og:title" content="Debt Payoff Calculator | Resolve Your Debt Faster" />
+    <meta property="og:description" content="Master your finances with the ultimate debt payoff tool. Compare strategies, visualize progress, and get debt-free faster." />
+    <meta property="og:image" content="https://payoffcalculator.doodax.com/og-image.jpg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://payoffcalculator.doodax.com/" />
+    <meta property="twitter:title" content="Debt Payoff Calculator | Resolve Your Debt Faster" />
+    <meta property="twitter:description" content="Master your finances with the ultimate debt payoff tool. Compare strategies, visualize progress, and get debt-free faster." />
+    <meta property="twitter:image" content="https://payoffcalculator.doodax.com/og-image.jpg" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              'gold': {
+                '50': '#fefce8',
+                '100': '#fef9c3',
+                '200': '#fef08a',
+                '300': '#fde047',
+                '400': '#facc15',
+                '500': '#eab308',
+                '600': '#ca8a04',
+                '700': '#a16207',
+                '800': '#854d0e',
+                '900': '#713f12',
+              },
+            },
+            animation: {
+              'gradient': 'gradient 15s ease infinite',
+              'float': 'float 6s ease-in-out infinite',
+              'nebula': 'nebula 20s linear infinite',
+            },
+            keyframes: {
+              gradient: {
+                '0%, 100%': { 'background-position': '0% 50%' },
+                '50%': { 'background-position': '100% 50%' },
+              },
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-20px)' },
+              },
+              nebula: {
+                '0%': { transform: 'rotate(0deg) scale(1)' },
+                '50%': { transform: 'rotate(180deg) scale(1.1)' },
+                '100%': { transform: 'rotate(360deg) scale(1)' },
+              }
+            },
+          },
+        },
+      }
+    </script>
+    <!-- Babel for in-browser JSX & TSX transpilation -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- React & ReactDOM from CDN -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- Recharts from CDN -->
+    <script src="https://unpkg.com/recharts/umd/Recharts.min.js"></script>
+    <style>
+      body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      .nebula-layer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-size: cover;
+        mix-blend-mode: screen;
+        opacity: 0.5;
+      }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "recharts": "https://aistudiocdn.com/recharts@^3.4.1"
+  }
+}
+</script>
+
+<!-- Schema.org JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Debt Payoff Calculator",
+  "url": "https://payoffcalculator.doodax.com",
+  "description": "A free tool to calculate debt payoff strategies using Snowball and Avalanche methods.",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "All",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Hsini Mohamed",
+    "url": "https://github.com/hsinidev"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="dark bg-gray-900">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script type="text/babel" data-presets="react,typescript" src="./index.tsx"></script>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
